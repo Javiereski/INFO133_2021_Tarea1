@@ -1,0 +1,31 @@
+Se usará el modelo mostrado en la correción
+Colección “Archivos”
+
+{ 
+ID: int
+fecha de grabacion: datetime
+ciudad: string
+duracion: int (segundos")
+formato: string
+latitud: double
+longitud: double
+exterior: Bool, verdadero para exteriores
+usuario: {RUT:int, nombre:string, apellido:string }
+segmentos: [
+    { ID:int, 
+    formato:string, 
+    duracion:int, 
+   inicio:int, 
+    fin:int,
+   etiquetas: [ { nombre_fuente:string, descripcion:string, id_analizador:string que puede ser humano o maquina}]
+ ]
+}
+
+{
+usuarios: {RUT:int, nombre:string, apellido:apellido:} -> para guardar los usuarios aunque no es usado realmente
+}
+
+{
+tipo:int
+archivos: [ID:int]
+}
